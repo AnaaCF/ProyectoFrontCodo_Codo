@@ -46,7 +46,6 @@ header div{
     justify-content:right;      
 }
 .portada{
-    width: 40%;
     height: 60px;
     display: flex;
     flex-direction: column;
@@ -55,6 +54,10 @@ header div{
     text-align: end;
     color: aliceblue;
     margin:  100px 100px;
+}
+.portada p{
+    width: 40%;
+    float: right;
 }
 #botoncomprar{
     border-radius: 5px;
