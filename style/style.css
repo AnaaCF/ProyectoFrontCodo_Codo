@@ -11,18 +11,20 @@
 
 header{
     background-color: grey;
-    display: flex;
-    flex-direction:row ;
+    display: flex;   
     justify-content: space-around;
     align-items: center;   
     
 }
 @media (max-width: 960px){
-    header{
+  
+    .menu-navegador{
+        display: flex;
         flex-direction: column;
     }
-    
+   
 }
+
 
 li{
     list-style: none;
@@ -35,6 +37,7 @@ header div{
     align-items: center;
 }
 .menu-navegador li a{
+    
     text-decoration: none;
     color: aliceblue;
 }
@@ -81,7 +84,7 @@ header div{
         flex-direction: column;
     }
     .portada{
-        margin: 200px 50px 20px 0px;
+        margin: 200px 25px 20px 0px;
     }
     .publicidad{
         flex-direction: column;
