@@ -17,6 +17,12 @@ header{
     align-items: center;   
     
 }
+@media (max-width: 960px){
+    header{
+        flex-direction: column;
+    }
+    
+}
 
 li{
     list-style: none;
@@ -32,6 +38,8 @@ header div{
     text-decoration: none;
     color: aliceblue;
 }
+
+   
 #header__nav--ultimo   {
     color: rgb(6, 207, 6);
 }
@@ -45,23 +53,52 @@ header div{
     width: 100%;
     justify-content:right;      
 }
+
 .portada{
-    height: 60px;
+    
     display: flex;
     flex-direction: column;
-   
+    margin: 300px 50px 20px 0px;
     align-items:flex-end;
     text-align: end;
     color: aliceblue;
-    margin:  100px 100px;
+   
 }
-.portada p{
+
+
+.portada p {
     width: 40%;
     float: right;
+  
 }
+@media (max-width:550px) {
+    .portada p {
+        width: 100%;
+        float: right;  
+           
+    }
+    .botones{
+        flex-direction: column;
+    }
+    .portada{
+        margin: 200px 50px 20px 0px;
+    }
+    .publicidad{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+}
+
+.botones{
+    display: flex;
+    margin: 2px;
+}
+
 #botoncomprar{
     border-radius: 5px;
     background: rgb(6, 207, 6);
+    margin: 2px;
     padding: 8px;
     color: aliceblue;
     text-decoration: none;
@@ -69,6 +106,7 @@ header div{
 #botonorador{
     border-radius: 5px;
     border: 1px solid white ;
+    margin: 2px;
     padding: 8px;
     color: aliceblue;
     text-decoration: none; 
@@ -79,10 +117,12 @@ main{
     align-items: center;
 }
 .main__oradores{
-    display: flex;
-   
+    display: flex;  
+    flex-wrap: wrap; 
     padding: 0 15%;
 }
+
+
 .titulo{
     text-align: center;
 }
